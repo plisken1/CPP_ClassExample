@@ -1,7 +1,7 @@
 //============================================================================
 // Name        : CPP_ClassExample.cpp
 // Author      : Harry Nisbet
-// Version     :
+// Version     : 1.0
 // Copyright   : Your copyright notice
 // Description : An example of Class
 //============================================================================
@@ -16,7 +16,7 @@ class MyClass
 
 	public:
 	    int myNum;						// Class variable
-	    string myString;				// Class varibale
+	    string myString;				// Class variable
 
 	    int getPrivateInt()				// Public GETTER method.
 	    {
@@ -26,6 +26,11 @@ class MyClass
 	    void setPrivateInt(int anInt)	// Public SETTER method.
 	    {
 	    	privateInt=anInt;
+	    }
+
+	    int doubleMe(int anInt)
+	    {
+	    	return anInt*2;
 	    }
 };
 
@@ -39,6 +44,7 @@ int main()
 
 	cout << o.myNum << endl;
 	cout << o.myString << endl;
-	cout << o.getPrivateInt();
+	cout << o.getPrivateInt() << endl;
+	cout << o.doubleMe(50);
 	return 0;
 }
