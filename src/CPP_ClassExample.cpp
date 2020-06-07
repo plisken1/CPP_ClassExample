@@ -1,7 +1,7 @@
 //============================================================================
 // Name        : CPP_ClassExample.cpp
 // Author      : Harry Nisbet
-// Version     : 1.1
+// Version     : 1.2
 // Copyright   : Your copyright notice
 // Description : An example of Class
 //============================================================================
@@ -48,13 +48,19 @@ int main()
 	  o.myString = "Some text";			// Assign variable to object.
 	  o.setPrivateInt(5);
 
+	  // MyOtherClass
 	  oc.a="good day";				// Assign variable to MyOtherClass object.
+	  oc.setString("ok then");		// Call SETTER Method.
 
+	// MyClass
 	cout << o.myNum << endl;
 	cout << o.myString << endl;
 	cout << o.getPrivateInt() << endl;
 	cout << o.doubleMe(50) << endl;
+
+	// MyOtherClass
 	cout << oc.a << endl;
-	// cout<<"String from MyOtherClass is " << oc.getString() << endl;
+	cout << oc.getString() << endl;	// MyOtherClass GETTER method.
+
 	return 0;
 }

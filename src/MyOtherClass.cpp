@@ -2,6 +2,7 @@
  * MyOtherClass.cpp
  *
  *  Created on: 6 Jun 2020
+ *  Updated:	7 Jun 2020
  *      Author: plisken
  */
 
@@ -16,16 +17,14 @@ MyOtherClass::MyOtherClass()
 	// TODO Auto-generated constructor stub
 }
 
-std::string getString()
+std::string MyOtherClass::getString()
 {
 	return myString;
 }
-void setString(std::string aStr)
+void MyOtherClass::setString(std::string aStr)
 {
 	myString=aStr;
 }
-
-
 
 
 MyOtherClass::~MyOtherClass()
