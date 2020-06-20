@@ -1,7 +1,7 @@
 //============================================================================
 // Name        : CPP_ClassExample.cpp
 // Author      : Harry Nisbet
-// Version     : 1.2
+// Version     : 1.3
 // Copyright   : Your copyright notice
 // Description : An example of Class
 //============================================================================
@@ -46,7 +46,7 @@ int main()
 
 	  o.myNum = 15;						// Assign variable to object.
 	  o.myString = "Some text";			// Assign variable to object.
-	  o.setPrivateInt(5);
+	  o.setPrivateInt(665);
 
 	  // MyOtherClass
 	  oc.a="good day";				// Assign variable to MyOtherClass object.
